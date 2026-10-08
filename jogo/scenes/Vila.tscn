@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://thgs2yolkqvk"]
 
 [ext_resource type="TileSet" uid="uid://b7ewgdch5rvv4" path="res://tiles/vila.tres" id="1_aroqr"]
+[ext_resource type="PackedScene" uid="uid://b2i8f22l2rgo1" path="res://entities/jogador.tscn" id="2_o2076"]
 
 [node name="Vila" type="Node2D" unique_id=1180844704]
 metadata/_edit_horizontal_guides_ = [0.0, 384.0]
@@ -13,3 +14,6 @@ tile_set = ExtResource("1_aroqr")
 [node name="objetos" type="TileMapLayer" parent="." unique_id=1095402920]
 tile_map_data = PackedByteArray("AAAIAAcAAAAEAAQAAAAYAAYAAAAAAAQAAAAYABIAAAAAAAQAAAACABMAAAAEAAQAAAAMAA8AAAADAAIAAAACAAUAAAADAAIAAAAaAAMAAAADAAIAAAAiAAkAAAADAAIAAAAQABMAAAAEAAAAAAARAAcAAAAEAAAAAAAdAAkAAAAEAAAAAAAhABMAAAAEAAAAAAAdABYAAAAEAAAAAAAIABAAAAADAAAAAAAFAAQAAAADAAAAAAAYAAIAAAADAAAAAAAXAA4AAAAFAAIAAAARAAkAAAAFAAIAAAAVAAcAAAAFAAIAAAARABAAAAAFAAIAAAARABEAAAAFAAIAAAARAA8AAAAFAAEAAAAVAAkAAAAFAAEAAAAYAA4AAAAFAAEAAAA=")
 tile_set = ExtResource("1_aroqr")
+
+[node name="Jogador" parent="." unique_id=21811617 instance=ExtResource("2_o2076")]
+position = Vector2(308, 198)
