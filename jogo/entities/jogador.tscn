@@ -19,21 +19,21 @@ region = Rect2(32, 0, 16, 16)
 atlas = ExtResource("2_mi7s2")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m0gj8"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xet37"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(0, 16, 16, 16)
+region = Rect2(0, 48, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mi7s2"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gye3k"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(16, 16, 16, 16)
+region = Rect2(16, 48, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ntdb4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6w5h"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(32, 16, 16, 16)
+region = Rect2(32, 48, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1y6is"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_bj3w7"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(48, 16, 16, 16)
+region = Rect2(48, 48, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wrf7a"]
 atlas = ExtResource("2_mi7s2")
@@ -51,21 +51,21 @@ region = Rect2(32, 32, 16, 16)
 atlas = ExtResource("2_mi7s2")
 region = Rect2(48, 32, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xet37"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0gj8"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(0, 48, 16, 16)
+region = Rect2(0, 16, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gye3k"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi7s2"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(16, 48, 16, 16)
+region = Rect2(16, 16, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_q6w5h"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntdb4"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(32, 48, 16, 16)
+region = Rect2(32, 16, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bj3w7"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1y6is"]
 atlas = ExtResource("2_mi7s2")
-region = Rect2(48, 48, 16, 16)
+region = Rect2(48, 16, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lgkx6"]
 animations = [{
@@ -83,41 +83,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_nvuv8")
 }],
 "loop": 1,
-"name": &"down",
-"speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m0gj8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mi7s2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ntdb4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1y6is")
-}],
-"loop": 1,
-"name": &"left",
-"speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wrf7a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8ej8p")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8c0iw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_byptf")
-}],
-"loop": 1,
-"name": &"right",
+"name": &"baixo",
 "speed": 8.0
 }, {
 "frames": [{
@@ -134,7 +100,41 @@ animations = [{
 "texture": SubResource("AtlasTexture_bj3w7")
 }],
 "loop": 1,
-"name": &"up",
+"name": &"cima",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrf7a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ej8p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8c0iw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_byptf")
+}],
+"loop": 1,
+"name": &"direita",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0gj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mi7s2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntdb4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1y6is")
+}],
+"loop": 1,
+"name": &"esquerda",
 "speed": 8.0
 }]
 
@@ -148,7 +148,7 @@ script = ExtResource("1_m0gj8")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1390612713]
 z_index = 1
 sprite_frames = SubResource("SpriteFrames_lgkx6")
-animation = &"up"
+animation = &"cima"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1743563826]
 position = Vector2(0, 5)
